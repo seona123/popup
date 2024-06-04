@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link href="community.css" type="text/css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>커뮤니티</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="community.js"></script>
+</head>
+<body>
+<header id="header">
+    <div class="pointer"></div>
+    <div class="logo">
+        <a href="#" onclick="openmain('one.html')" style="text-decoration: none">
+            <img src="media/logo.png" alt="팝업스토어 로고">
+        </a>
+    </div>
+    <nav id="menubar">
+        <ul>
+            <li>
+                <a href="#" onclick="openinfo('info.html')">POP-UP STORE</a>
+            </li>
+            <li>
+                <a href="#" onclick="openresrv('resrv.html')">RESERVE</a>
+            </li>
+            <li>
+                <a href="#" onclick="opencommunity('community.html')">COMMUNITY</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="login-buttons">
+        <button onclick="openjoinPage('member.html')" style="background: none; border: none; color: black; cursor: pointer">회원가입</button>
+        <button onclick="openLoginPage('login.html')" style="background: none; border: none; color: black; cursor: pointer">로그인</button>
+    </div>
+</header>
+<br>
+<div class="main-content">
+    <div class="box1"> <!--하얀색 가장 큰 박스-->
+        <div class="container">
+            <div class="box active" data-board="자유게시판">자유게시판</div>
+            <div class="box" data-board="홍보 게시판">홍보 게시판</div>
+            <div class="box" data-board="후기 게시판">후기 게시판</div>
+        </div>
+        <h4 class="inline-block write-button" style="text-align: right">✔️ 글 작성</h4>
+        <div class="board-list">
+            <table class="table">
+                <thead class="thead">
+                <tr>
+                    <th class="th"><strong>번호</strong></th>
+                    <th class="th"><strong>제목</strong></th>
+                    <th class="th"><strong>글쓴이</strong></th>
+                    <th class="th"><strong>작성일</strong></th>
+                    <th class="th"><strong>조회수</strong></th>
+                    <th class="th"><strong>추천수</strong></th>
+                </tr>
+                </thead>
+                <tbody class="tbody">
+                <!-- 게시판 내용은 JavaScript에 의해 동적으로 삽입됩니다 -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="write-form hidden">
+    <h2>카페 글쓰기</h2>
+    <form>
+        <label for="board-select">게시판을 선택해 주세요</label>
+        <select id="board-select">
+            <option value="자유게시판">자유게시판</option>
+            <option value="홍보 게시판">홍보 게시판</option>
+            <option value="후기 게시판">후기 게시판</option>
+        </select>
+        <br>
+        <label for="title-input">제목</label>
+        <input type="text" id="title-input" placeholder="제목을 입력해 주세요.">
+        <br>
+        <label for="content-input">내용</label>
+        <textarea id="content-input" placeholder="내용을 입력해 주세요."></textarea>
+        <br>
+        <div class="button-container">
+            <button type="button" onclick="submitPost()">등록</button>
+            <button type="button" onclick="cancelPost()">취소</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

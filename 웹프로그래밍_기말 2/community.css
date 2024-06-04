@@ -1,0 +1,273 @@
+@font-face {
+    font-family: 'KCC-Hanbit';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/KCC-Hanbit.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'KCC-Hanbit', Arial, sans-serif;
+    background-color: #B3C8CF;
+    margin: 0;
+    padding: 0;
+    margin-top: 120px;
+}
+
+.auth-buttons {
+    text-align: right;
+    padding: 10px 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 auto;
+    font-family: 'KCC-Hanbit', Arial, sans-serif; /* 폰트를 설정합니다 */
+}
+
+.auth-button {
+    display: block;
+    margin: 0 auto;
+    width: 350px; /* 원하는 너비로 설정 */
+    height: auto; /* 높이를 자동으로 설정하여 비율을 유지 */
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: black; /* 글자색을 검정으로 설정 */
+    font-family: 'KCC-Hanbit', Arial, sans-serif; /* 폰트를 설정합니다 */
+}
+
+.auth-links {
+    text-align: right;
+    padding: 10px 20px;
+}
+
+.main-content.hidden {
+    display: none;
+}
+
+.box1 {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 80%;
+    margin: 0 auto; /* 중앙 정렬을 위한 설정 */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 500px; /* 원하는 너비로 설정 */
+    height: 40px;
+    margin: 0uto;
+
+}
+
+.box {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-right: 10px;
+    color: black;
+}
+
+.box.active {
+    background-color: #006989;
+    color: white;
+}
+
+.inline-block {
+    display: inline-block;
+    cursor: pointer;
+    height: auto; /* 높이를 자동으로 설정하여 비율을 유지 */
+}
+
+.write-button {
+    text-align: right;
+    width: 100%;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.thead .th {
+    background-color: #006989;
+    padding: 10px;
+    color: white;
+}
+
+.th, .tbody th {
+    border: 1px solid #B3C8CF;
+    padding: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.write-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 80%;
+    margin: 20px auto;
+}
+
+.write-form h2 {
+    text-align: center;
+}
+
+.write-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 버튼을 가운데 정렬 */
+}
+
+.write-form label {
+    margin: 10px 0 5px;
+}
+
+.write-form input,
+.write-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px; /* 입력 필드의 최대 너비 */
+}
+
+.write-form select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 110px; /* 입력 필드의 최대 너비 */
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column; /* 버튼을 위아래로 배치 */
+    align-items: center;
+    width:100%;
+    max-width: 80px;
+}
+
+.write-form button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #006989;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px; /* 버튼의 최대 너비를 설정합니다 */
+}
+
+.write-form button:hover {
+    background-color: #006989;
+}
+
+header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 70px;
+}
+
+#menubar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#menubar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menubar ul li {
+    margin: 0 30px;
+    position: relative;
+}
+
+#menubar ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+#menubar ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: black;
+    left: 50%;
+    bottom: -5px;
+    transition: all 0.3s ease;
+}
+
+#menubar ul li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.login-buttons {
+    flex: 1;
+    text-align: right;
+}
+
+button{
+    font-family: 'KCC-Hanbit', Arial, sans-serif;
+}
+
+#doz_body {
+    position: relative;
+}
+.pointer {
+    z-index: 999999;
+    margin-top: 16px;
+    margin-left: 16px;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border-radius: 40px;
+    border: 2px solid #000;
+    background: #000;
+}
+
+@media screen and (max-width: 1200px) {
+    .pointer {
+        display: none !important;
+    }
+}
+
+.pointer.large {
+    width: 68px;
+    height: 68px;
+    background: none;
+    transition-property: width, height, background;
+    transition-duration: 0.5s;
+}

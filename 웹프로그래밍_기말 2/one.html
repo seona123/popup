@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>팝업 스토어</title>
+    <link rel="stylesheet" type="text/css" href="one.css">
+    <script src="https://kit.fontawesome.com/bb0669c495.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="one.js" defer></script>
+</head>
+<body>
+<header id="header">
+    <div class="pointer"></div>
+    <div class="logo">
+        <a href="#" onclick="refreshPage()" style="text-decoration: none">
+            <img src="media/logo.png" alt="팝업스토어 로고">
+        </a>
+    </div>
+    <nav id="menubar">
+        <ul>
+            <li><a href="#" onclick="openinfo('info.html')">POP-UP STORE</a></li>
+            <li><a href="#" onclick="openresrv('resrv.html')">RESERVE</a></li>
+            <li><a href="#" onclick="opencommunity('community.html')">COMMUNITY</a></li>
+        </ul>
+    </nav>
+    <div class="login-buttons">
+        <button class="btn-animate" onclick="openjoinPage('member.html')" style="background: none; border: none; color: black; cursor: pointer">회원가입</button>
+        <button class="btn-animate" onclick="openLoginPage('login.html')" style="background: none; border: none; color: black; cursor: pointer">로그인</button>
+    </div>
+</header>
+<br>
+<form class="search-box" onsubmit="return searchPopupStores()">
+    <input class="search-txt" type="text" id="search-query" placeholder="검색어를 입력하세요.">
+    <button class="search-btn btn-animate" type="submit">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+</form>
+<section class="slider">
+    <div class="slide">
+        <img src="media/Background1.jpg" alt="슬라이드 이미지 1">
+        <div class="overlay">
+            <div class="overlay-text">
+                <h2>01</h2>
+                <p>니즈에 딱 맞는 팝업 공간이 바로 여기에!</p>
+                <p>모든 정보를 한 눈에!</p>
+                <button class="overlay-button btn-animate" onclick="openinfo('info.html')">
+                    팝업스토어 둘러보기
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="slide">
+        <img src="media/Background2.jpg" alt="슬라이드 이미지 2" />
+        <div class="overlay">
+            <div class="overlay-text">
+                <h2>02</h2>
+                <p>편리하고 빠른 예약 시스템</p>
+                <p>지금 바로 예약하세요.</p>
+                <button class="overlay-button btn-animate" onclick="openresrv('resrv.html')">
+                    예약하러 가기
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="slide">
+        <img src="media/Background3.jpg" alt="슬라이드 이미지 3">
+        <div class="overlay">
+            <div class="overlay-text">
+                <h2>03</h2>
+                <p>팝업스토어의 생생한 후기들!</p>
+                <button class="overlay-button btn-animate" onclick="opencommunity('community.html')">
+                    커뮤니티 둘러보기
+                </button>
+            </div>
+        </div>
+    </div>
+    <a class="prev btn-animate" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next btn-animate" onclick="changeSlide(1)">&#10095;</a>
+</section>
+<div class="sort-options"></div>
+<ul>
+    <ol>
+        <ol>
+            <ol>
+                <div class="title" style="color: black; font-size: 20px">
+                    현재 운영중인 팝업 스토어
+                </div>
+            </ol>
+        </ol>
+    </ol>
+</ul>
+<div class="popup-stores">
+    <div class="popup-store">
+        <button
+                class="btn-animate"
+                onclick="openPopupStoreDetails1('two1.html')"
+        >
+            <img src="media/01.png" alt="짱재 팝업스토어" />
+            <div class="overlay">
+                <div class="overlay-text">짱재 팝업스토어</div>
+            </div>
+        </button>
+        <div class="popup-store-title">짱재 팝업스토어</div>
+    </div>
+    <div class="popup-store">
+        <button
+                class="btn-animate"
+                onclick="openPopupStoreDetails2('two2.html')"
+        >
+            <img src="media/02.png" alt="하겐다즈X텅스페이 팝업스토어" />
+            <div class="overlay">
+                <div class="overlay-text">하겐다즈X텅스페이 팝업스토어</div>
+            </div>
+        </button>
+        <div class="popup-store-title">하겐다즈X텅스페이 팝업스토어</div>
+    </div>
+    <div class="popup-store">
+        <button
+                class="btn-animate"
+                onclick="openPopupStoreDetails3('two3.html')"
+        >
+            <img src="media/03.png" alt="포켓몬스터 팝업스토어" />
+            <div class="overlay">
+                <div class="overlay-text">포켓몬스터 팝업스토어</div>
+            </div>
+        </button>
+        <div class="popup-store-title">포켓몬스터 팝업스토어</div>
+    </div>
+    <div class="popup-store">
+        <button
+                class="btn-animate"
+                onclick="openPopupStoreDetails4('two4.html')"
+        >
+            <img src="media/04.png" alt="어도비 팝업스토어" />
+            <div class="overlay">
+                <div class="overlay-text">어도비 팝업스토어</div>
+            </div>
+        </button>
+        <div class="popup-store-title">어도비 팝업스토어</div>
+    </div>
+    <div class="popup-store">
+        <button
+                class="btn-animate"
+                onclick="openPopupStoreDetails5('two5.html')"
+        >
+            <img src="media/05.png" alt="짜파게티 팝업스토어" />
+            <div class="overlay">
+                <div class="overlay-text">짜파게티 팝업스토어</div>
+            </div>
+        </button>
+        <div class="popup-store-title">짜파게티 팝업스토어</div>
+    </div>
+    <div class="popup-store">
+        <button
+                class="btn-animate"
+                onclick="openPopupStoreDetails6('two5_2.html')"
+        >
+            <img src="media/05_2.jpg" alt="아톰 팝업스토어" />
+            <div class="overlay">
+                <div class="overlay-text">아톰 팝업스토어</div>
+            </div>
+        </button>
+        <div class="popup-store-title">아톰 팝업스토어</div>
+    </div>
+</div>
+<div class="footer">
+    <hr class="footer-line" />
+    <p>
+        알잘딱깔센(주), 대표 : 000, 대표전화 : 02-950-2023<br />
+        서울시 노원구 동일로214길 32(상계동 205), 갈멜관 2층(컴소실습실2)<br />
+        제호 : 팝업스토어 웹 페이지, 신고번호 : 노원구, 가20232<br />
+        E-mail : software@bible.ac.kr<br />
+        Copyright ⓒ 알잘딱깔센 Corp. All Rights Reserved.
+    </p>
+</div>
+</body>
+</html>

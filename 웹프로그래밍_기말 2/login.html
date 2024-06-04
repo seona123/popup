@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>팝업스토어 로그인</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="login.js" defer></script>
+</head>
+<body>
+<header id="header">
+    <div class="pointer"></div>
+    <div class="logo">
+        <a href="#" onclick="openmain('one.html')" style="text-decoration: none">
+            <img src="media/logo.png" alt="팝업스토어 로고">
+        </a>
+    </div>
+    <nav id="menubar">
+        <ul>
+            <li>
+                <a href="#" onclick="openinfo('info.html')">POP-UP STORE</a>
+            </li>
+            <li>
+                <a href="#" onclick="openresrv('resrv.html')">RESERVE</a>
+            </li>
+            <li>
+                <a href="#" onclick="opencommunity('community.html')">COMMUNITY</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="login-buttons">
+        <button onclick="openjoinPage('member.html')" style="background: none; border: none; color: black; cursor: pointer;  font-family: 'KCC-Hanbit';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/KCC-Hanbit.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;">회원가입</button>
+        <button onclick="openLoginPage('login.html')" style="background: none; border: none; color: black; cursor: pointer;  font-family: 'KCC-Hanbit';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/KCC-Hanbit.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;">로그인</button>
+    </div>
+</header>
+<div class="login-container">
+    <h1>팝업스토어 로그인</h1>
+    <div class="form-group">
+        <input type="text" id="username" placeholder="아이디" required>
+    </div>
+    <div class="form-group">
+        <input type="password" id="password" placeholder="비밀번호" required>
+    </div>
+    <button class="btn-login" onclick="login()">로그인(login)</button>
+    <div class="links">
+        <a href="#" onclick="openmemberpage('member.html')">회원가입</a>
+    </div>
+</div>
+</body>
+</html>

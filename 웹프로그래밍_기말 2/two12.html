@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>팝업스토어 정보</title>
+  <link rel="stylesheet" href="two.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="two.js"></script>
+</head>
+<body>
+<header id="header">
+  <div class="pointer"></div>
+  <div class="logo">
+    <a href="#" onclick="openmain('one.html')" style="text-decoration: none">
+      <img src="media/logo.png" alt="팝업스토어 로고">
+    </a>
+  </div>
+  <nav id="menubar">
+    <ul>
+      <li>
+        <a href="#" onclick="openinfo('info.html')">POP-UP STORE</a>
+      </li>
+      <li>
+        <a href="#" onclick="openresrv('resrv.html')">RESERVE</a>
+      </li>
+      <li>
+        <a href="#" onclick="opencommunity('community.html')">COMMUNITY</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="login-buttons">
+    <button onclick="openjoinPage('member.html')" style="background: none; border: none; color: black; cursor: pointer">회원가입</button>
+    <button onclick="openLoginPage('login.html')" style="background: none; border: none; color: black; cursor: pointer">로그인</button>
+  </div>
+</header>
+<div class="popup-store">
+  <div class="popup-info">
+    <div class="image-container">
+      <img src="media/wimage05_5.png" alt="봄날의 담곰이" class="img">
+    </div>
+    <div class="details">
+      <ul><h2>봄날의 담곰이</h2></ul>
+      <ul>
+        <li><strong>운영 기간 : </strong> 24.05.17 ~ 24.06.27 & 10:30 ~ 22:00</li>
+        <br>
+        <li><strong>기획/운영 : </strong> 카카오프렌즈 샵, 담곰이</li>
+      </ul>
+      <ul><li><strong>소개 :</strong> 올 봄엔 담곰이와 사랑에 빠져볼까나~🌸</li></ul>
+      <ul>
+        <li><strong>콘텐츠</strong></li>
+        <ul>
+        <li>3만원 이상 구매 시 '꽁자를 알려줘 증명사진' 증정</li>
+        <li>8만원 이상 구매 시 '봄날의 피크닉백' 증정</li>
+        <li>*프로모션은 1인 1회 증정하며, 사은품 수량이 한정되어 있어 재고 소진 시 이벤트는 자동 종료됩니다.</li>
+        </ul>
+      </ul>
+      <ul><li><strong>키워드 :</strong> #담곰이</li></ul>
+      <ul>
+        <li>
+        <strong>자료 출처 :</strong> instagram @kakaofriends_official & twitter @damgome_kr</li>
+        <br>
+        <li>SNS : instagram @kakaofriends_official & twitter @damgome_kr</li>
+      </ul>
+      <ul><li><strong>장소 :</strong> 카카오프렌즈 홍대 플래그십 스토어</li></ul>
+      <ul>
+        <li>
+          <a href="resrv.html">
+            <strong>예약하기</strong>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>

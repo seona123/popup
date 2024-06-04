@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>팝업스토어 정보</title>
+  <link rel="stylesheet" href="two.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="two.js"></script>
+</head>
+<body>
+<header id="header">
+  <div class="pointer"></div>
+  <div class="logo">
+    <a href="#" onclick="openmain('one.html')" style="text-decoration: none">
+      <img src="media/logo.png" alt="팝업스토어 로고">
+    </a>
+  </div>
+  <nav id="menubar">
+    <ul>
+      <li>
+        <a href="#" onclick="openinfo('info.html')">POP-UP STORE</a>
+      </li>
+      <li>
+        <a href="#" onclick="openresrv('resrv.html')">RESERVE</a>
+      </li>
+      <li>
+        <a href="#" onclick="opencommunity('community.html')">COMMUNITY</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="login-buttons">
+    <button onclick="openjoinPage('member.html')" style="background: none; border: none; color: black; cursor: pointer">회원가입</button>
+    <button onclick="openLoginPage('login.html')" style="background: none; border: none; color: black; cursor: pointer">로그인</button>
+  </div>
+</header>
+<div class="popup-store">
+  <div class="popup-info">
+    <div class="image-container">
+      <img src="media/01.png" alt="짱재 팝업스토어" class="img">
+    </div>
+    <div class="details">
+      <ul><h2>UFC 스포츠 팝업스토어</h2></ul>
+      <ul>
+        <li>
+          <strong>운영 기간 : </strong> 24.04.19 ~ 24.05.09 & 매일: 10:00~22:00
+        </li>
+        <br>
+        <li>
+          <strong>기획/운영 : </strong> 스포츠 라이프 스타일 웨어 브랜드
+        </li>
+      </ul>
+      <ul>
+        <li><strong>소개 : </strong>UFC스포츠와 야전삽 짱재님이 함께하는 콜라보
+        팝업이 수원스타필드에 열렸다‼<br>📌 다양한 포토존 📌 UFC스포츠 신제품
+        슬라이더, 가방 등의 제품 📌 짱재 콜라보 제품 10% 할인 프로모션
+        </li>
+      </ul>
+      <ul>
+        <li><strong>콘텐츠</strong></li>
+        <ul>
+          <li>
+            풀업 챌린지 미션 달성 시, 개수에 따라 할인 쿠폰 및 티셔츠 증정
+            (주말 깜짝 이벤트) 구매 고객 한정 럭키볼 추첨 이벤트 진행 *1등
+            100만원 신세계 상품권
+          </li>
+          <li>구매 금액대별 기프트</li>
+          <li>50만원 이상 구매 시 로브 증정</li>
+          <li>5만원 이상 구매 시 휴대용백 증정</li>
+          <li>7만원 이상 구매 시 콜라보 와펜 증정</li>
+        </ul>
+      </ul>
+      <ul>
+        <li><strong>키워드 : </strong>#UFC 스포츠 #수원놀거리 #수원팝업스토어
+        #짱재</li>
+      </ul>
+      <ul><li><strong>자료 출처 : </strong>instagram @ufcsport_korea</li></ul>
+      <ul><li><strong>장소 : </strong>스타필드 수원점</li></ul>
+      <ul>
+        <li>
+          <a href="resrv.html">
+            <strong>예약하기</strong>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>

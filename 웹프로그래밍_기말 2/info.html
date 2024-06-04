@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>팝업 스토어</title>
+    <link rel="stylesheet" type="text/css" href="info.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="info.js" defer></script>
+</head>
+<body>
+<header id="header">
+    <div class="pointer"></div>
+    <div class="logo">
+        <a href="#" onclick="openmain('one.html')" style="text-decoration: none">
+            <img src="media/logo.png" alt="팝업스토어 로고">
+        </a>
+    </div>
+    <nav id="menubar">
+        <ul>
+            <li>
+                <a href="#" onclick="openinfo('info.html')">POP-UP STORE</a>
+            </li>
+            <li>
+                <a href="#" onclick="openreserv('resrv.html')">RESERVE</a>
+            </li>
+            <li>
+                <a href="#" onclick="opencommunity('community.html')">COMMUNITY</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="login-buttons">
+        <button onclick="openjoinPage('member.html')" style="background: none; border: none; color: black; cursor: pointer">회원가입</button>
+        <button onclick="openLoginPage('login.html')" style="background: none; border: none; color: black; cursor: pointer">로그인</button>
+    </div>
+</header>
+<main>
+    <section id="main-section">
+        <br>
+        <ul>
+            <div style="font-size: 30px">
+                3<h2 style="font-size: 16px; display: inline;">월</h2>
+            </div>
+        </ul>
+        <div class="popup-stores">
+            <div class="popup-store" data-date="2023-03" data-rating="3" data-url="two6.html">
+                <img src="media/image01.png" alt="무신사 기프트샵 팝업스토어">
+                <div class="popup-store-title">무신사 기프트샵 팝업스토어</div>
+                <div class="overlay">
+                    <div class="rating">무신사 기프트샵 팝업스토어<br>★ 3.0</div>
+                </div>
+            </div>
+            <div class="popup-store" data-date="2023-03" data-rating="3" data-url="two7.html">
+                <img src="media/image02.png" alt="멜린앤게츠 팝업 스토어">
+                <div class="popup-store-title">멜린앤게츠 팝업스토어</div>
+                <div class="overlay">
+                    <div class="rating">멜린앤게츠 팝업스토어<br>★ 2.0</div>
+                </div>
+            </div>
+            <div class="popup-store" data-date="2023-03" data-rating="3" data-url="two8.html">
+                <img src="media/image03.png" alt="플레이브 팝업스토어">
+                <div class="popup-store-title">플레이브 팝업스토어</div>
+                <div class="overlay">
+                    <div class="rating">플레이브 팝업스토어<br>★ 1.0</div>
+                </div>
+            </div>
+            <div class="popup-store" data-date="2023-03" data-rating="3" data-url="two9.html">
+                <img src="media/image04.png" alt="스트레이키즈 팝업스토어">
+                <div class="popup-store-title">스트레이키즈 팝업스토어</div>
+                <div class="overlay">
+                    <div class="rating">스트레이키즈 팝업스토어<br>★ 3.0</div>
+                </div>
+            </div>
+            <div class="popup-store" data-date="2023-03" data-rating="3" data-url="two10.html">
+                <img src="media/image05.png" alt="건담 팝업스토어">
+                <div class="popup-store-title">건담 팝업스토어</div>
+                <div class="overlay">
+                    <div class="rating">건담 팝업스토어<br>★ 3.0</div>
+                </div>
+            </div>
+        </div>
+        <ul>
+            <div style="font-size: 30px">
+                4<h2 style="font-size: 16px; display: inline;">월</h2>
+            </div>
+        </ul>
+        <div class="popup-stores">
+            <div class="popup-store" data-date="2023-04" data-rating="2" data-url="two1.html">
+                <img src="media/01.png" alt="ufc스토프 팝업스토어">
+                <div class="popup-store-title">UFC 스포츠 팝업스토어</div>
+                <div class="overlay">
+                    <div class="rating">UFC 스포츠 팝업스토어<br>★ 3.0</div>
+                </div>
+            </div>
+            <div class="popup-store" data-date="2023-04" data-rating="2" data-url="two2.html">
+                <img src="media/02.png" alt="하겐다즈X텅스페이 팝업스토어">
+                <div class="popup-store-title">하겐다즈X텅스페이 팝업스토어</div>
+                <div class="overlay">
+                    <div class="rating">하겐다즈X텅스페이 팝업스토어<br>★ 2.0</div>
+                </div>
+            </div>
+            <div class="popup-store" data-date="2023-04" data-rating="2" data-url="two3.html">
+                <img src="media/03.png" alt="포켓몬스터 팝업스토어">
+                <div class="popup-store-title">포켓몬스터 팝업스토어</div>
+                <div class="overlay">
+                    <div class="rating">포켓몬스터 팝업스토어<br> 3.0</div>
+                </div>
+            </div>
+            <div class="popup-store" data-date="2023-04" data-rating="2" data-url="two4.html">
+                <img src="media/04.png" alt="어도비 팝업스토어">
+                <div class="popup-store-title">어도비 팝업스토어</div>
+                <div class="overlay">
+                    <div class="rating">어도비 팝업스토어<br>★ 1.0</div>
+                </div>
+            </div>
+            <div class="popup-store" data-date="2023-04" data-rating="2" data-url="two5.html">
+                <img src="media/05.png" alt="짜파게티 팝업스토어">
+                <div class="popup-store-title">짜파게티 팝업스토어</div>
+                <div class="overlay">
+                    <div class="rating">짜파게티 팝업스토어<br>★ 2.0</div>
+                </div>
+            </div>
+        </div>
+        <ul>
+            <div style="font-size: 30px">
+                5<h2 style="font-size: 16px; display: inline;">월</h2>
+            </div>
+        </ul>
+        <div class="popup-stores">
+            <div class="popup-store" data-date="2023-05" data-rating="1" data-url="two11.html">
+                <img src="media/wimage02_5.png" alt="샌드사운드X보이넥스토도어 팝업스토어">
+                <div class="popup-store-title">샌드사운드X보이넥스토도어 팝업스토어</div>
+                <div class="overlay">
+                    <div class="rating">샌드사운드X보이넥스토도어 팝업스토어<br>★ 1.0</div>
+                </div>
+            </div>
+            <div class="popup-store" data-date="2023-05" data-rating="1" data-url="two12.html">
+                <img src="media/wimage05_5.png" alt="봄날의 담곰이 팝업스토어">
+                <div class="popup-store-title">봄날의 담곰이 팝업스토어</div>
+                <div class="overlay">
+                    <div class="rating">봄날의 담곰이 팝업스토어<br>★ 3.0</div>
+                </div>
+            </div>
+            <div class="popup-store" data-date="2023-05" data-rating="1" data-url="two13.html">
+                <img src="media/wimage04_5.png" alt="갓청자 침투부 팝업스토어">
+                <div class="popup-store-title">갓청자 침투부 팝업스토어</div>
+                <div class="overlay">
+                    <div class="rating">갓청자 침투부 팝업스토어<br>★ 2.0</div>
+                </div>
+            </div>
+            <div class="popup-store" data-date="2023-05" data-rating="1" data-url="two14.html">
+                <img src="media/wimage03_5.png" alt="한국해비타트 팝업스토어">
+                <div class="popup-store-title">한국해비타트 팝업스토어</div>
+                <div class="overlay">
+                    <div class="rating">한국해비타트 팝업스토어<br>★ 1.0</div>
+                </div>
+            </div>
+            <div class="popup-store" data-date="2023-05" data-rating="1" data-url="two15.html">
+                <img src="media/wimage_5.png" alt="PICNIC With YUMI'S CELLS 팝업스토어">
+                <div class="popup-store-title">PICNIC With YUMI'S CELLS 팝업스토어</div>
+                <div class="overlay">
+                    <div class="rating">PICNIC With YUMI'S CELLS 팝업스토어<br>★ 2.0</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>

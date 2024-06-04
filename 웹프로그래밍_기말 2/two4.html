@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>팝업스토어 정보</title>
+  <link rel="stylesheet" href="two.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="two.js"></script>
+</head>
+<body>
+<header id="header">
+  <div class="pointer"></div>
+  <div class="logo">
+    <a href="#" onclick="openmain('one.html')" style="text-decoration: none">
+      <img src="media/logo.png" alt="팝업스토어 로고">
+    </a>
+  </div>
+  <nav id="menubar">
+    <ul>
+      <li>
+        <a href="#" onclick="openinfo('info.html')">POP-UP STORE</a>
+      </li>
+      <li>
+        <a href="#" onclick="openresrv('resrv.html')">RESERVE</a>
+      </li>
+      <li>
+        <a href="#" onclick="opencommunity('community.html')">COMMUNITY</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="login-buttons">
+    <button onclick="openjoinPage('member.html')" style="background: none; border: none; color: black; cursor: pointer">회원가입</button>
+    <button onclick="openLoginPage('login.html')" style="background: none; border: none; color: black; cursor: pointer">로그인</button>
+  </div>
+</header>
+<div class="popup-store">
+  <div class="popup-info">
+    <div class="image-container">
+      <img src="media/04.png" alt="어도비 팝업스토어" class="img">
+    </div>
+    <div class="details">
+      <ul><h2>어도비 팝업스토어</h2></ul>
+      <ul>
+        <li>
+          <strong>운영 기간 : </strong> 24.04.09 ~ 24.04.15 & 주중 11:00~19:00, 주말 11:00~20:00
+        </li>
+        <br>
+        <li><strong>기획/운영:</strong> 어도비</li>
+      </ul>
+      <ul>
+        <li>
+        <strong>소개:</strong> 요즘 핫한 생성형 AI를 직접 체험할 수 있는
+        포토샵 팝업스토어가 성수동 공간 와디즈에 열린다?! <ol>여행 콘셉트로 꾸며진 공간에서 포토샵 AI 신기능 ‘생성형 채우기’ 기능을 활용해
+        다양한 체험을 진행할 수 있대 ~
+        </li>
+      </ul>
+      <ul>
+        <li><strong>콘텐츠</strong></li>
+        <ul>
+          <li>여행 필수품 Top3 한글로 생성하고 캐릭터 꾸미기</li>
+          <li>포토샵 AI로 세계 일주</li>
+          <li>포토샵 AI로 상상 여행프로그램을 체험</li>
+          <li>
+            팝업스토어 오픈 기념으로, 포토샵을 6개월간 25% 할인가에 구독 가능하고
+            <br>(4/5-4/23) 팝업에서 현장 구매 시, 구매자에 한해 특별
+            굿즈를 제공
+          </li>
+        </ul>
+      </ul>
+      <ul><li><strong>키워드 : </strong> #어도비 #포토샵 #생성해서여행속으로</li></ul>
+      <ul><li><strong>자료 출처 : </strong>instagram @adobekor</li></ul>
+      <ul><li><strong>장소 : </strong> 서울 성동구 연무장 1길 7-1 공간 와디즈</li></ul>
+      <ul>
+        <li>
+          <a href="resrv.html">
+            <strong>예약하기</strong>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>팝업스토어 회원가입</title>
+    <link rel="stylesheet" href="member.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="member.js" defer></script>
+</head>
+<body>
+<header id="header">
+    <div class="pointer"></div>
+    <div class="logo">
+        <a href="#" onclick="openmain('one.html')" style="text-decoration: none">
+            <img src="media/logo.png" alt="팝업스토어 로고">
+        </a>
+    </div>
+    <nav id="menubar">
+        <ul>
+            <li><a href="#" onclick="openinfo('info.html')">POP-UP STORE</a></li>
+            <li><a href="#" onclick="openresrv('resrv.html')">RESERVE</a></li>
+            <li><a href="#" onclick="opencommunity('community.html')">COMMUNITY</a></li>
+        </ul>
+    </nav>
+    <div class="login-buttons">
+        <button onclick="openjoinPage('member.html')" style="background: none; border: none; color: black; cursor: pointer; font-family: 'KCC-Hanbit';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/KCC-Hanbit.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal">회원가입</button>
+        <button onclick="openLoginPage('login.html')" style="background: none; border: none; color: black; cursor: pointer;  font-family: 'KCC-Hanbit';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/KCC-Hanbit.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal">로그인</button>
+    </div>
+</header>
+<div class="container">
+    <h1>팝업스토어 회원가입</h1>
+    <p class="subtext">팝업스토어 신규 사용자를 위한 계정 생성 화면입니다.<br>문의: 02-950-2023</p>
+    <p class="subtext">* 아래 항목들은 모두 필수 입력 사항입니다.</p>
+    <div class="content">
+        <div class="form-group">
+            <label for="name">이름*</label>
+            <input type="text" id="name" placeholder="김길동" required>
+        </div>
+        <div class="form-group">
+            <label for="email">이메일*</label>
+            <input type="text" id="email" placeholder="본인확인용" required>
+            <span class="email-domain">@ bible.ac.kr</span>
+        </div>
+        <div class="form-group">
+            <label for="username">아이디*</label>
+            <input type="text" id="username" required>
+        </div>
+        <div class="form-group">
+            <label for="password">비밀번호*</label>
+            <input type="password" id="password" placeholder="비밀번호" required>
+            <span class="highlight" onclick="togglePassword()">비밀번호 보기</span>
+        </div>
+        <div class="form-group">
+            <label for="password-confirm">비밀번호 확인*</label>
+            <input type="password" id="password-confirm" placeholder="비밀번호 확인" required>
+        </div>
+        <div class="form-group checkbox" onclick="toggleInfo()">
+            <input type="checkbox" id="agree" required>
+            <label for="agree"><pre style="font-family: 'KCC-Hanbit', Arial, sans-serif;">개인정보 수집 및 이용에 대한 안내(필수)</pre></label>
+        </div>
+        <div id="info-box" class="info-box">
+            <p>팝업스토어 웹페이지는 사용자의 개인정보를 중요시 하며, 개인정보보호법에 따라 사용자의 개인정보보호 및 권익을 보호하고 개인정보와 관련한 이용자의 고충을 원활하게 처리할 수 있도록 다음과 같은 개인정보처리방침을 두고 있습니다.</p>
+            <ol>
+                <li>수집·이용 목적: 팝업 스토어 예약, 팝업 스토어 정보, 팝업 스토어 검색, 커뮤니티 등의 팝업 스토어 웹 페이지의 전반적인 서비스 이용을 위한 자격 확인</li>
+                <li>수집항목: 아이디, 비밀번호</li>
+                <li>개인정보의 보유 및 이용기간: 공공기록물 관리에 관한 법률에 의한 보존기간까지</li>
+                <li>동의를 거부할 권리가 있으며, 거부 시 팝업스토어의 웹 서비스 제공이 불가능 합니다.</li>
+            </ol>
+        </div>
+    </div>
+    <div class="btn-container">
+        <button class="btn" onclick="register()" style="font-family: 'KCC-Hanbit', Arial, sans-serif;">가입하기</button>
+    </div>
+</div>
+</body>
+</html>

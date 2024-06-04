@@ -1,0 +1,242 @@
+@font-face {
+    font-family: 'KCC-Hanbit';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/KCC-Hanbit.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'KCC-Hanbit', Arial, sans-serif;
+    background-color: #B3C8CF;
+    margin: 0;
+    padding: 0;
+}
+
+.auth-buttons {
+    text-align: right;
+    padding: 10px 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 auto;
+    font-family: 'KCC-Hanbit', Arial, sans-serif;
+}
+
+.auth-links {
+    display: flex;
+    justify-content: flex-end; /* 오른쪽 끝에 배치 */
+    align-items: center; /* 수직 가운데 정렬 */
+}
+
+.auth-links a {
+    font-family: 'KCC-Hanbit', Arial, sans-serif;
+    color: black;
+    text-decoration: none;
+    margin: 100 10px;
+    text-align: center;
+    line-height: 70px; /* header의 높이와 동일하게 설정 */
+}
+
+.auth-links a:hover {
+    color: #8fbc8f;
+}
+
+.popup-stores {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.popup-store:hover .overlay {
+    opacity: 1;
+}
+
+.rating, .store-name {
+    margin: 5px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.auth-button {
+    display: block;
+    margin: 0 auto;
+    width: 350px;
+    height: auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-family: 'KCC-Hanbit', Arial, sans-serif;
+}
+
+header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 70px;
+}
+
+#menubar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#menubar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menubar ul li {
+    margin: 0 30px;
+    position: relative;
+}
+
+#menubar ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+#menubar ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: black;
+    left: 50%;
+    bottom: -5px;
+    transition: all 0.3s ease;
+}
+
+#menubar ul li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    font-family: 'KCC-Hanbit', sans-serif;
+}
+
+.popup-store {
+    position: relative;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 300px; /* 상자의 너비 설정 */
+    height: 300px; /* 상자의 높이 설정 */
+    overflow: hidden; /* 이미지가 상자 범위를 벗어나지 않도록 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 상자에 그림자 추가 */
+    margin: 1px; /* 상자 간의 간격 줄이기 */
+}
+
+.popup-store img {
+    height: auto; /* 이미지 비율을 유지 */
+    max-width: 100%; /* 상자의 너비에 맞춤 */
+    max-height: 80%; /* 이미지의 최대 높이 설정 */
+    border-radius: 10px;
+    background-color: white; /* 남는 부분을 하얀색 여백으로 표시 */
+    transition: transform 0.3s ease; /* 부드러운 전환 효과 */
+}
+
+.popup-store:hover img {
+    transform: scale(1.05); /* 이미지가 5% 확대 */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 10px;
+}
+
+.popup-store-title {
+    position: absolute;
+    bottom: 30px; /* 이미지 밑의 공간에 위치하도록 설정 */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%; /* 너비를 100%로 설정하여 중앙 정렬 */
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0; /* 텍스트 위아래로 패딩 추가 */
+}
+
+.rating, .store-name {
+    margin: 5px 0;
+}
+
+.login-buttons {
+    flex: 1;
+    text-align: right;
+    margin: 30px;
+}
+
+button{
+    font-family: 'KCC-Hanbit', sans-serif;
+}
+
+#main-section {
+    padding-top: 90px;
+}
+
+#doz_body {
+    position: relative;
+}
+.pointer {
+    z-index: 999999;
+    margin-top: 16px;
+    margin-left: 16px;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border-radius: 40px;
+    border: 2px solid #000;
+    background: #000;
+}
+
+@media screen and (max-width: 1200px) {
+    .pointer {
+        display: none !important;
+    }
+}
+
+.pointer.large {
+    width: 68px;
+    height: 68px;
+    background: none;
+    transition-property: width, height, background;
+    transition-duration: 0.5s;
+}

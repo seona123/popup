@@ -1,0 +1,203 @@
+@font-face {
+    font-family: 'KCC-Hanbit';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/KCC-Hanbit.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'KCC-Hanbit', Arial, sans-serif;
+    background-color: #B3C8CF;
+    margin: 0;
+    padding: 0;
+    margin-top: 120px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.auth-links {
+    display: flex;
+}
+
+.auth-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-top: 20px;
+    margin: 0 auto; /* 중앙 정렬을 위한 수정 */
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #006989;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #B3C8CF;
+    color: black;
+}
+
+.hidden {
+    display: none;
+}
+
+#confirmation {
+    text-align: center;
+}
+
+.login-buttons {
+    flex: 1;
+    text-align: right;
+}
+
+.auth-button {
+    display: block;
+    margin: 0 auto;
+    width: 350px;
+    height: auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-family: 'KCC-Hanbit', Arial, sans-serif;
+}
+
+header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 70px;
+}
+
+#menubar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#menubar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menubar ul li {
+    margin: 0 30px;
+    position: relative;
+}
+
+#menubar ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+#menubar ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: black;
+    left: 50%;
+    bottom: -5px;
+    transition: all 0.3s ease;
+}
+
+#menubar ul li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+button {
+    font-family: 'KCC-Hanbit', sans-serif;
+}
+
+#doz_body {
+    position: relative;
+}
+.pointer {
+    z-index: 999999;
+    margin-top: 16px;
+    margin-left: 16px;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border-radius: 40px;
+    border: 2px solid #000;
+    background: #000;
+}
+
+@media screen and (max-width: 1200px) {
+    .pointer {
+        display: none !important;
+    }
+}
+
+.pointer.large {
+    width: 68px;
+    height: 68px;
+    background: none;
+    transition-property: width, height, background;
+    transition-duration: 0.5s;
+}
